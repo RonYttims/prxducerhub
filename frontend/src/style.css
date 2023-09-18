@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+.App{
+    height: 100vh;
+    padding: 0px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: antiquewhite;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    margin-bottom: 50px;
+    font-size: 70px;
+    font-weight: bolder;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 2px black;
+    text-shadow: 5px 5px black;
+}
+
+.packs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.pack{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 20px;
+}
+
+.pack:hover{
+    background-color: rgba(255, 255, 255, .7);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+
+img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+h3{
+    margin: 0;
+}
+
+p{
+    margin: 0;
+}
+
+a{
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+a:visited{
+    color: white;
+}
+
+
+.update{
+    background-color: lightblue;
+    text-decoration: none;
+    color: white;
+}
+
+.delete{
+    background-color: lightcoral;
+    color: white;
+}
+
+.delete, .update{
+    padding: 5px 20px;
+    border: 2px solid black;
+    box-shadow: 4px 4px black;
+    font-weight: bold;
+}
+
+.delete:hover, .update:hover{
+    box-shadow: 2px 2px black; 
+}
+
+.add-pack-button{
+    padding: 10px 20px;
+    font-weight: bold;
+    border: 2px solid black;
+    background-color: lightgreen;
+    box-shadow: 5px 5px black;
+    color: black;
+}
+
+.add-pack-button:hover{
+    box-shadow: 2px 2px black;
+}
+
+
+.form{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form input{
+    height: 30px;
+}
+
+
+
